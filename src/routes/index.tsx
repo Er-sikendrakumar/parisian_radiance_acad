@@ -25,15 +25,14 @@ function Index() {
       <Header />
       <main>
         <Hero />
-        <Marquee />
-        <About />
-        <Expertise />
-        <Programs />
-        <Gallery />
-        <Shop />
-        <Testimonials />
-        <Booking />
-        <Journal />
+        <Founder />
+        <ThreePillars />
+        <FeaturedProducts />
+        <Stats />
+        <SuccessPride />
+        <Reviews />
+        <GoogleBusiness />
+        <NewsArticles />
       </main>
       <Footer />
       <WhatsAppFloat />
@@ -44,146 +43,106 @@ function Index() {
 /* ───── HERO ───── */
 function Hero() {
   return (
-    <section className="relative min-h-screen flex items-end pb-16 md:pb-24 pt-32 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src={hero}
-          alt="Luxury Parisian wellness suite"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/70" />
+        <img src={hero} alt="Vanessa Saboun aesthetic specialists" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-foreground/40" />
       </div>
-
-      <div className="relative mx-auto max-w-[1400px] w-full px-6 lg:px-12 grid md:grid-cols-12 gap-8 items-end animate-fade-up">
-        <div className="md:col-span-7">
-          <p className="eyebrow text-foreground/80">
-            <span className="gold-line" />
-            Académie Française · Est. Paris
-          </p>
-          <h1 className="font-serif text-[14vw] md:text-[7.5vw] leading-[0.95] mt-6 text-foreground">
-            The art of <em className="italic font-light">becoming</em>
-            <br /> beautifully.
-          </h1>
-        </div>
-        <div className="md:col-span-4 md:col-start-9">
-          <p className="text-base leading-relaxed text-foreground/85 max-w-sm">
-            A maison of aesthetic mastery — body sculpting, lymphatic drainage,
-            maderotherapy and post-operative care, refined through twenty years
-            of French expertise.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/" className="btn-luxury">
-              Discover the Academy <ArrowUpRight size={14} />
-            </Link>
-            <Link to="/" className="btn-ghost-luxury">Book a Session</Link>
-          </div>
+      <div className="relative mx-auto max-w-3xl text-center text-background px-6 animate-fade-up">
+        <p className="eyebrow text-background/80"><span className="gold-line" />Vanessa Saboun Academy</p>
+        <h1 className="font-serif text-4xl md:text-6xl mt-6 leading-[1.1]">
+          Become a specialist in aesthetic care thanks to our{" "}
+          <em className="italic font-light">certification, qualifying and diploma</em> training courses
+        </h1>
+        <div className="mt-10">
+          <Link to="/" className="btn-luxury bg-accent text-accent-foreground border-accent hover:bg-transparent hover:text-background">
+            Register now <ArrowUpRight size={14} />
+          </Link>
         </div>
       </div>
     </section>
   );
 }
 
-/* ───── MARQUEE ───── */
-function Marquee() {
-  const items = [
-    "Maderotherapy",
-    "Lymphatic Drainage",
-    "Body Sculpting",
-    "Post-operative Care",
-    "Metal Therapy",
-    "Aesthetic Coaching",
-  ];
+/* ───── FOUNDER ───── */
+function Founder() {
   return (
-    <section className="border-y border-border/60 py-6 overflow-hidden bg-ivory">
-      <div className="flex items-center gap-12 whitespace-nowrap animate-[scroll_40s_linear_infinite]">
-        {[...items, ...items, ...items].map((t, i) => (
-          <span key={i} className="font-serif italic text-2xl text-foreground/70">
-            {t} <span className="mx-6 text-accent">✦</span>
-          </span>
-        ))}
-      </div>
-      <style>{`@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-33.33%)}}`}</style>
-    </section>
-  );
-}
-
-/* ───── ABOUT ───── */
-function About() {
-  return (
-    <section className="py-32 px-6 lg:px-12">
-      <div className="mx-auto max-w-[1400px] grid md:grid-cols-12 gap-12 items-center">
+    <section className="py-28 px-6 lg:px-12">
+      <div className="mx-auto max-w-[1200px] grid md:grid-cols-12 gap-12 items-center">
         <div className="md:col-span-5">
           <div className="img-zoom rounded-sm overflow-hidden shadow-[var(--shadow-soft)]">
-            <img src={founder} alt="Vanessa Saboun" className="w-full h-[640px] object-cover" loading="lazy" />
+            <img src={founder} alt="Vanessa Saboun, founder" className="w-full h-[520px] object-cover" loading="lazy" />
           </div>
         </div>
-        <div className="md:col-span-6 md:col-start-7">
-          <p className="eyebrow"><span className="gold-line" />The Founder</p>
-          <h2 className="font-serif text-5xl md:text-6xl mt-6 leading-[1.05]">
-            Vanessa Saboun, <em className="italic font-light">a quiet revolution in modern aesthetics.</em>
+        <div className="md:col-span-7">
+          <p className="eyebrow text-accent"><span className="gold-line" />The Founder</p>
+          <h2 className="font-serif text-4xl md:text-5xl mt-4 leading-[1.1]">
+            The founder of <em className="italic font-light">Vanessa Saboun Academy</em> ®
           </h2>
-          <p className="mt-8 text-foreground/75 leading-relaxed">
-            Trained between Paris, Geneva and Saint-Tropez, Vanessa has spent
-            two decades shaping the silhouettes — and the confidence — of women
-            from across Europe and the Middle East. Her academy is the
-            distillation of that craft: an intimate house where post-surgical
-            recovery, lymphatic flow and sculptural massage are taught with
-            surgical precision and feminine intuition.
+          <p className="mt-6 text-foreground/75 leading-relaxed max-w-xl">
+            Vanessa, certified lymphologist & osteopath specialist in aesthetic
+            and post-operative care. Aesthetic coaching with a personalised
+            approach. Each stage is tailored to the morphology of our trainees,
+            their physical and emotional well-being through tailor-made
+            treatments that meet your needs.
           </p>
-          <div className="mt-10 grid grid-cols-3 gap-8 border-t border-border pt-8">
-            <Stat n="20" label="Years of practice" />
-            <Stat n="3 200+" label="Students formed" />
-            <Stat n="14" label="Countries" />
-          </div>
+          <Link to="/" className="btn-luxury mt-10 bg-accent text-accent-foreground border-accent hover:bg-transparent hover:text-foreground">
+            Learn more <ArrowUpRight size={14} />
+          </Link>
         </div>
       </div>
     </section>
   );
 }
 
-function Stat({ n, label }: { n: string; label: string }) {
+/* ───── THREE PILLARS ───── */
+function ThreePillars() {
+  const items = [
+    { title: "Aesthetic coaching for a stress-free transformation", img: founder },
+    { title: "Let our treatments reveal the best version of yourself", img: drainage },
+    { title: "Find the perfect training course for you", img: training },
+  ];
   return (
-    <div>
-      <div className="font-serif text-4xl">{n}</div>
-      <p className="eyebrow mt-2 text-[0.6rem]">{label}</p>
-    </div>
+    <section className="py-16 px-6 lg:px-12">
+      <div className="mx-auto max-w-[1200px] grid md:grid-cols-3 gap-8">
+        {items.map((it) => (
+          <article key={it.title} className="hover-lift">
+            <div className="img-zoom aspect-[4/3] rounded-sm overflow-hidden">
+              <img src={it.img} alt={it.title} className="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <h3 className="font-serif text-xl mt-5 leading-snug">{it.title}</h3>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
-/* ───── EXPERTISE ───── */
-function Expertise() {
-  const items = [
-    { title: "Maderotherapy", body: "Sculpting wood instruments to remodel the silhouette and stimulate circulation.", img: maderotherapy },
-    { title: "Lymphatic Drainage", body: "A whisper-soft technique to detoxify, decongest and restore the body's natural flow.", img: drainage },
-    { title: "Oils & Creams", body: "House-made formulas: cold-pressed oils and crèmes infused with Mediterranean botanicals.", img: oils },
+/* ───── FEATURED PRODUCTS ───── */
+function FeaturedProducts() {
+  const products = [
+    { name: "Cups — Figura Red", price: "€68.00", img: product3 },
+    { name: "Post-Operative Cream [1kg] — Figura Red", price: "€124.00", img: product2 },
+    { name: "Post-Operative Cream [250g] — Figura Red", price: "€44.00", img: product1 },
+    { name: "Post-Operative Cream [500g] — Figura Red", price: "€72.00", img: product4 },
   ];
   return (
     <section className="py-24 px-6 lg:px-12 bg-ivory">
-      <div className="mx-auto max-w-[1400px]">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-          <div>
-            <p className="eyebrow"><span className="gold-line" />Our Expertise</p>
-            <h2 className="font-serif text-5xl md:text-6xl mt-4 max-w-2xl leading-[1.05]">
-              Rituals refined to an <em className="italic font-light">exact science.</em>
-            </h2>
-          </div>
+      <div className="mx-auto max-w-[1200px]">
+        <div className="flex items-end justify-between mb-12">
+          <h2 className="font-serif text-4xl md:text-5xl">Our featured products</h2>
           <Link to="/" className="text-sm uppercase tracking-[0.22em] underline underline-offset-8 decoration-accent hover:text-accent transition">
-            All disciplines
+            Show all
           </Link>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {items.map((it) => (
-            <article key={it.title} className="hover-lift bg-background rounded-sm overflow-hidden">
-              <div className="img-zoom aspect-[4/5]">
-                <img src={it.img} alt={it.title} className="w-full h-full object-cover" loading="lazy" />
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          {products.map((p) => (
+            <article key={p.name} className="group">
+              <div className="img-zoom bg-background rounded-sm overflow-hidden aspect-square">
+                <img src={p.img} alt={p.name} className="w-full h-full object-cover" loading="lazy" />
               </div>
-              <div className="p-8">
-                <h3 className="font-serif text-2xl">{it.title}</h3>
-                <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{it.body}</p>
-                <Link to="/" className="mt-6 inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.24em] hover:text-accent transition">
-                  Discover <ArrowUpRight size={14} />
-                </Link>
-              </div>
+              <h3 className="font-serif text-base mt-4 leading-snug">{p.name}</h3>
+              <span className="text-sm tracking-wider text-accent mt-1 block">{p.price}</span>
             </article>
           ))}
         </div>
@@ -192,65 +151,44 @@ function Expertise() {
   );
 }
 
-/* ───── PROGRAMS ───── */
-function Programs() {
+/* ───── STATS ───── */
+function Stats() {
+  const stats = [
+    { n: "5k+", label: "Satisfied patients" },
+    { n: "800+", label: "Certified interns" },
+    { n: "60+", label: "Surgeons collaborators" },
+    { n: "14+", label: "Attentive countries" },
+  ];
   return (
-    <section className="py-32 px-6 lg:px-12">
-      <div className="mx-auto max-w-[1400px] grid md:grid-cols-12 gap-12 items-center">
-        <div className="md:col-span-6 order-2 md:order-1">
-          <p className="eyebrow"><span className="gold-line" />Training Programs</p>
-          <h2 className="font-serif text-5xl md:text-6xl mt-4 leading-[1.05]">
-            Become a <em className="italic font-light">master</em> of the modern silhouette.
-          </h2>
-          <p className="mt-6 text-foreground/75 leading-relaxed max-w-lg">
-            Six certification paths — from the foundational Maderotherapy I to
-            the elite Post-Operative Specialist — each delivered in our
-            Parisian atelier with intimate cohorts of twelve.
-          </p>
-          <ul className="mt-10 divide-y divide-border border-y border-border">
-            {[
-              ["Maderotherapy · Foundation", "5 days"],
-              ["Lymphatic Drainage · Vodder Method", "7 days"],
-              ["Post-Operative Specialist", "10 days"],
-              ["Metal Therapy · Cryo-sculpting", "4 days"],
-              ["Master Class · Aesthetic Coaching", "3 days"],
-            ].map(([t, d]) => (
-              <li key={t} className="flex items-center justify-between py-5 group cursor-pointer">
-                <span className="font-serif text-xl group-hover:translate-x-2 transition-transform duration-500">{t}</span>
-                <span className="eyebrow text-[0.6rem]">{d}</span>
-              </li>
-            ))}
-          </ul>
-          <Link to="/" className="btn-luxury mt-10">
-            Apply for 2026 cohort <ArrowUpRight size={14} />
-          </Link>
-        </div>
-        <div className="md:col-span-5 md:col-start-8 order-1 md:order-2">
-          <div className="img-zoom rounded-sm overflow-hidden shadow-[var(--shadow-soft)]">
-            <img src={training} alt="Atelier Paris" className="w-full h-[680px] object-cover" loading="lazy" />
+    <section className="py-20 px-6 lg:px-12">
+      <div className="mx-auto max-w-[1200px] grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+        {stats.map((s) => (
+          <div key={s.label}>
+            <div className="font-serif text-5xl md:text-6xl text-accent">{s.n}</div>
+            <p className="eyebrow mt-3 text-[0.65rem]">{s.label}</p>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
 }
 
-/* ───── GALLERY ───── */
-function Gallery() {
-  const imgs = [maderotherapy, drainage, oils, training];
+/* ───── SUCCESS / PRIDE ───── */
+function SuccessPride() {
+  const imgs = [training, founder, maderotherapy, drainage];
   return (
     <section className="py-24 px-6 lg:px-12 bg-ivory">
-      <div className="mx-auto max-w-[1400px]">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="eyebrow"><span className="gold-line" />Transformations</p>
-          <h2 className="font-serif text-5xl md:text-6xl mt-4 leading-[1.05]">
-            Results, <em className="italic font-light">quietly remarkable.</em>
-          </h2>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+      <div className="mx-auto max-w-[1200px] text-center">
+        <p className="eyebrow text-accent"><span className="gold-line" />Their success, our pride<span className="gold-line" /></p>
+        <p className="mt-6 max-w-2xl mx-auto text-foreground/75 leading-relaxed">
+          These graduates have excelled in our training and propelled their
+          careers to new heights. It is our pride to give your career a new
+          boost and make your professional dreams come true.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-14">
           {imgs.map((img, i) => (
-            <div key={i} className={`img-zoom overflow-hidden rounded-sm ${i % 3 === 0 ? "row-span-2 aspect-[3/5]" : "aspect-[4/5]"}`}>
-              <img src={img} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <div key={i} className="img-zoom aspect-[4/5] rounded-sm overflow-hidden">
+              <img src={img} alt="Graduate" className="w-full h-full object-cover" loading="lazy" />
             </div>
           ))}
         </div>
@@ -259,92 +197,40 @@ function Gallery() {
   );
 }
 
-/* ───── SHOP ───── */
-function Shop() {
-  const products = [
-    { name: "Crème Sculptante", price: "€86", img: product1, tag: "Bestseller" },
-    { name: "Huile Précieuse", price: "€72", img: product2, tag: "New" },
-    { name: "Bois de Massage", price: "€124", img: product3 },
-    { name: "Outil Métal Thérapie", price: "€158", img: product4 },
-  ];
-  return (
-    <section className="py-32 px-6 lg:px-12">
-      <div className="mx-auto max-w-[1400px]">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-          <div>
-            <p className="eyebrow"><span className="gold-line" />La Boutique</p>
-            <h2 className="font-serif text-5xl md:text-6xl mt-4 leading-[1.05]">
-              The <em className="italic font-light">house</em> collection.
-            </h2>
-          </div>
-          <Link to="/" className="text-sm uppercase tracking-[0.22em] underline underline-offset-8 decoration-accent hover:text-accent transition">
-            Shop all
-          </Link>
-        </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
-          {products.map((p) => (
-            <article key={p.name} className="group">
-              <div className="relative img-zoom bg-ivory rounded-sm overflow-hidden aspect-[4/5]">
-                <img src={p.img} alt={p.name} className="w-full h-full object-cover" loading="lazy" />
-                {p.tag && (
-                  <span className="absolute top-4 left-4 bg-background/90 backdrop-blur px-3 py-1 text-[0.6rem] uppercase tracking-[0.22em]">
-                    {p.tag}
-                  </span>
-                )}
-                <button className="absolute bottom-4 left-4 right-4 bg-foreground text-background py-3 text-[0.7rem] uppercase tracking-[0.24em] opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500">
-                  Quick Add
-                </button>
-              </div>
-              <div className="mt-5 flex items-start justify-between">
-                <h3 className="font-serif text-lg">{p.name}</h3>
-                <span className="text-sm tracking-wider">{p.price}</span>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ───── TESTIMONIALS ───── */
-function Testimonials() {
+/* ───── REVIEWS ───── */
+function Reviews() {
   const quotes = [
-    {
-      q: "Vanessa's hands have a memory of their own. After my surgery, her care gave me back not just my body, but my confidence.",
-      who: "Sophie L.",
-      role: "Patient · Paris",
-    },
-    {
-      q: "The most rigorous training I have ever followed. Six months later, my client list has tripled.",
-      who: "Camila R.",
-      role: "Maderotherapist · Madrid",
-    },
-    {
-      q: "An atelier where craft is treated as ceremony. Every detail is considered.",
-      who: "Léa M.",
-      role: "Aesthetician · Geneva",
-    },
+    { q: "Vanessa is a professional in her job. She really knows what she is doing right after the consultation. Thank you for your good contribution to my dignity nothing prevents this.", who: "Marina Mouton", days: "1 year ago" },
+    { q: "Challenge at the top of the top. Vanessa is very professional and knows the job. Every result was clinging. Highly recommended adding the work to me. Well so soon.", who: "Deya K.", days: "1 year ago" },
+    { q: "Great professional!", who: "Adia", days: "2 years ago" },
   ];
   return (
-    <section className="py-32 px-6 lg:px-12 bg-[oklch(0.94_0.02_70)]">
-      <div className="mx-auto max-w-[1400px]">
-        <p className="eyebrow text-center"><span className="gold-line" />Whispers<span className="gold-line" /></p>
-        <div className="grid md:grid-cols-3 gap-10 mt-16">
+    <section className="py-24 px-6 lg:px-12">
+      <div className="mx-auto max-w-[1200px] text-center">
+        <p className="eyebrow text-accent"><span className="gold-line" />They trusted us: discover their opinions!<span className="gold-line" /></p>
+        <div className="mt-10 inline-flex flex-col items-center gap-2">
+          <span className="eyebrow text-foreground">Excellent</span>
+          <div className="flex gap-1 text-accent">
+            {Array.from({ length: 5 }).map((_, i) => (
+              <Star key={i} size={20} fill="currentColor" strokeWidth={0} />
+            ))}
+          </div>
+          <span className="text-sm text-muted-foreground">Based on Google reviews</span>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 mt-14 text-left">
           {quotes.map((q) => (
-            <figure key={q.who} className="text-center md:text-left">
-              <div className="flex justify-center md:justify-start gap-1 text-accent mb-6">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={14} fill="currentColor" strokeWidth={0} />
-                ))}
+            <figure key={q.who} className="bg-ivory p-8 rounded-sm">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex gap-1 text-accent">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
+                  ))}
+                </div>
+                <span className="text-[0.65rem] uppercase tracking-wider text-muted-foreground">G</span>
               </div>
-              <blockquote className="font-serif text-2xl leading-snug italic text-foreground/85">
-                "{q.q}"
-              </blockquote>
-              <figcaption className="mt-8">
-                <div className="font-serif text-base">{q.who}</div>
-                <div className="eyebrow mt-1 text-[0.6rem]">{q.role}</div>
-              </figcaption>
+              <div className="font-serif text-base mb-1">{q.who}</div>
+              <div className="text-xs text-muted-foreground mb-4">{q.days}</div>
+              <blockquote className="text-sm text-foreground/80 leading-relaxed">"{q.q}"</blockquote>
             </figure>
           ))}
         </div>
@@ -353,65 +239,56 @@ function Testimonials() {
   );
 }
 
-/* ───── BOOKING CTA ───── */
-function Booking() {
+/* ───── GOOGLE MY BUSINESS ───── */
+function GoogleBusiness() {
+  const links = ["Pertuis", "Aubagne", "Saint House Beauty Saint Tropez", "Network", "Caen", "Yellow Pages"];
   return (
-    <section className="relative py-32 px-6 lg:px-12 overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={hero} alt="" className="w-full h-full object-cover" loading="lazy" />
-        <div className="absolute inset-0 bg-foreground/55" />
-      </div>
-      <div className="relative mx-auto max-w-3xl text-center text-background">
-        <p className="eyebrow text-background/70"><span className="gold-line" />By Appointment</p>
-        <h2 className="font-serif text-5xl md:text-7xl mt-6 leading-[1.02]">
-          Step into the <em className="italic font-light">house.</em>
-        </h2>
-        <p className="mt-8 text-background/85 leading-relaxed max-w-xl mx-auto">
-          Private consultations at our Parisian atelier and seasonal residency
-          in Saint-Tropez. Each guest is received personally.
-        </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Link to="/" className="btn-luxury bg-background text-foreground border-background hover:bg-transparent hover:text-background">
-            Reserve a session <ArrowUpRight size={14} />
-          </Link>
-          <Link to="/" className="btn-ghost-luxury text-background border-background hover:bg-background hover:text-foreground">
-            WhatsApp Concierge
-          </Link>
+    <section className="py-20 px-6 lg:px-12 bg-ivory">
+      <div className="mx-auto max-w-[1000px] text-center">
+        <p className="eyebrow text-accent">Google My Business</p>
+        <div className="flex flex-wrap justify-center gap-3 mt-8">
+          {links.map((l) => (
+            <a key={l} href="#" className="px-6 py-3 bg-accent text-accent-foreground text-[0.7rem] uppercase tracking-[0.22em] hover:bg-foreground hover:text-background transition">
+              {l}
+            </a>
+          ))}
         </div>
       </div>
     </section>
   );
 }
 
-/* ───── JOURNAL ───── */
-function Journal() {
+/* ───── NEWS / ARTICLES ───── */
+function NewsArticles() {
   const posts = [
-    { title: "The science of lymphatic flow", cat: "Wellness", img: drainage },
-    { title: "Preparing for cosmetic surgery", cat: "Care", img: founder },
-    { title: "Inside the Saint-Tropez residency", cat: "Maison", img: hero },
+    { title: "Why train in the Caleterapia?", date: "05 February 2025", img: maderotherapy },
+    { title: "Californian massage: how to make it a complete sensory experience", date: "05 February 2025", img: drainage },
+    { title: "Postpartum slimming: the most effective care to regain", date: "05 February 2025", img: oils },
   ];
   return (
-    <section className="py-32 px-6 lg:px-12">
-      <div className="mx-auto max-w-[1400px]">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
-          <div>
-            <p className="eyebrow"><span className="gold-line" />Le Journal</p>
-            <h2 className="font-serif text-5xl md:text-6xl mt-4">From the atelier.</h2>
-          </div>
+    <section className="py-24 px-6 lg:px-12">
+      <div className="mx-auto max-w-[1200px]">
+        <div className="flex items-end justify-between mb-12">
+          <p className="eyebrow text-accent"><span className="gold-line" />News and latest articles</p>
           <Link to="/blog" className="text-sm uppercase tracking-[0.22em] underline underline-offset-8 decoration-accent hover:text-accent transition">
-            Read all
+            View all articles
           </Link>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {posts.map((p) => (
-            <article key={p.title} className="group cursor-pointer">
-              <div className="img-zoom rounded-sm overflow-hidden aspect-[4/5]">
+            <article key={p.title} className="group cursor-pointer hover-lift bg-ivory rounded-sm overflow-hidden">
+              <div className="img-zoom aspect-[4/3]">
                 <img src={p.img} alt={p.title} className="w-full h-full object-cover" loading="lazy" />
               </div>
-              <p className="eyebrow mt-6">{p.cat}</p>
-              <h3 className="font-serif text-2xl mt-3 group-hover:text-accent transition-colors">
-                {p.title}
-              </h3>
+              <div className="p-6">
+                <p className="text-xs text-muted-foreground">By the academy · {p.date}</p>
+                <h3 className="font-serif text-xl mt-3 leading-snug group-hover:text-accent transition-colors">
+                  {p.title}
+                </h3>
+                <Link to="/blog" className="mt-5 inline-block px-5 py-2 bg-accent text-accent-foreground text-[0.65rem] uppercase tracking-[0.22em] hover:bg-foreground hover:text-background transition">
+                  Learn more
+                </Link>
+              </div>
             </article>
           ))}
         </div>
