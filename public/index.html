@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parisian Radiance Academy</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-w76A8fX9P+Y5+N7Nt6MDYft9QpR4eJEW6LrZ7vHknB0Euv7ga3zsCZw1yEeQv9xK" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Parisian Radiance</a>
+        <a class="navbar-brand fw-bold" href="#" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">VANESSA SABOUN</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,10 +33,12 @@
     <main class="mt-5 pt-5">
       <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
         <div class="container py-5">
-          <p class="eyebrow mb-3">Vanessa Saboun Academy</p>
-          <h1 class="display-5 fw-semibold">Become a specialist in aesthetic care with certified training and diploma courses</h1>
-          <p class="lead mt-4">Luxury wellness training, post-operative care and professional certification for the modern aesthetic specialist.</p>
-          <a class="btn btn-primary btn-lg mt-4" href="#contact">Register now</a>
+          <p class="eyebrow mb-3" style="color: rgba(255,255,255,0.8);">Vanessa Saboun Academy</p>
+          <h1 class="display-4 fw-light mb-4" style="font-family: 'Cormorant Garamond', serif; line-height: 1.2;">
+            Become a specialist in aesthetic care thanks to our <em class="fst-italic fw-normal">certification, qualifying and diploma</em> training courses
+          </h1>
+          <p class="lead mt-4 mb-4" style="font-weight: 300;">Luxury wellness training, post-operative care and professional certification for the modern aesthetic specialist.</p>
+          <a class="btn btn-outline-light btn-lg mt-4 px-4 py-3" href="#contact" style="border-width: 2px;">Register now</a>
         </div>
       </section>
 
@@ -45,41 +50,59 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <h2 class="fw-bold">The founder of Vanessa Saboun Academy ®</h2>
-            <p class="text-muted mt-4">Vanessa is a certified lymphologist and osteopath specialist in aesthetic and post-operative care. Her coaching program is personalized, professional and designed to deliver calm transformation for trainees.</p>
-            <a class="btn btn-outline-dark mt-3" href="#training">Learn more</a>
+            <p class="eyebrow text-primary mb-3">The Founder</p>
+            <h2 class="fw-light mb-4" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; line-height: 1.2;">
+              The founder of <em class="fst-italic fw-normal">Vanessa Saboun Academy</em> ®
+            </h2>
+            <p class="text-muted mt-4 leading-relaxed" style="font-weight: 300; line-height: 1.7;">
+              Vanessa, certified lymphologist & osteopath specialist in aesthetic
+              and post-operative care. Aesthetic coaching with a personalised
+              approach. Each stage is tailored to the morphology of our trainees,
+              their physical and emotional well-being through tailor-made
+              treatments that meet your needs.
+            </p>
+            <a class="btn btn-outline-dark mt-4 px-4 py-2" href="#training" style="border-width: 2px;">Learn more</a>
           </div>
         </div>
       </section>
 
-      <section class="bg-light py-5" id="training">
+      <section class="py-5" id="training" style="background: #faf5ed;">
         <div class="container">
           <div class="text-center mb-5">
-            <h2 class="fw-bold">Discover our training pillars</h2>
-            <p class="text-muted">Aesthetic coaching, personalized care and career-focused certification.</p>
+            <h2 class="fw-light" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem;">Discover our training pillars</h2>
+            <p class="text-muted mt-3" style="font-weight: 300;">Aesthetic coaching, personalized care and career-focused certification.</p>
           </div>
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0">
-                <div class="card-body">
-                  <h3 class="card-title">Stress-free transformation</h3>
-                  <p class="card-text text-muted">Learn the aesthetic techniques that deliver results while preserving emotional well-being.</p>
+              <div class="card h-100 shadow-sm border-0 bg-white p-4" style="border-radius: 1rem;">
+                <div class="card-body text-center">
+                  <div class="training-icon mb-3" style="width: 80px; height: 80px; background: linear-gradient(135deg, #8B5A3C, #D4AF37); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                    <span style="color: white; font-size: 2rem;">✨</span>
+                  </div>
+                  <h3 class="card-title fw-light" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">Stress-free transformation</h3>
+                  <p class="card-text text-muted" style="font-weight: 300; line-height: 1.6;">Learn the aesthetic techniques that deliver results while preserving emotional well-being.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0">
-                <div class="card-body">
-                  <h3 class="card-title">Tailored treatments</h3>
-                  <p class="card-text text-muted">Our courses are tailored to each trainee, their body type and their professional goals.</p>
+              <div class="card h-100 shadow-sm border-0 bg-white p-4" style="border-radius: 1rem;">
+                <div class="card-body text-center">
+                  <div class="training-icon mb-3" style="width: 80px; height: 80px; background: linear-gradient(135deg, #8B5A3C, #D4AF37); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                    <span style="color: white; font-size: 2rem;">🌿</span>
+                  </div>
+                  <h3 class="card-title fw-light" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">Tailored treatments</h3>
+                  <p class="card-text text-muted" style="font-weight: 300; line-height: 1.6;">Our courses are tailored to each trainee, their body type and their professional goals.</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0">
-                <div class="card-body">
-                  <h3 class="card-title">Career-ready training</h3>
-                  <p class="card-text text-muted">Find a training path that prepares you for the beauty and wellness market.</p>
+              <div class="card h-100 shadow-sm border-0 bg-white p-4" style="border-radius: 1rem;">
+                <div class="card-body text-center">
+                  <div class="training-icon mb-3" style="width: 80px; height: 80px; background: linear-gradient(135deg, #8B5A3C, #D4AF37); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                    <span style="color: white; font-size: 2rem;">🎓</span>
+                  </div>
+                  <h3 class="card-title fw-light" style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem;">Career-ready training</h3>
+                  <p class="card-text text-muted" style="font-weight: 300; line-height: 1.6;">Find a training path that prepares you for the beauty and wellness market.</p>
                 </div>
               </div>
             </div>
@@ -89,63 +112,75 @@
 
       <section class="container py-5" id="shop">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">Featured products</h2>
-          <p class="text-muted">Professional products designed for post-operative care and body sculpting.</p>
+          <h2 class="fw-light" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem;">Our featured products</h2>
+          <p class="text-muted" style="font-weight: 300;">Professional products designed for post-operative care and body sculpting.</p>
         </div>
         <div class="row g-4">
           <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="h5">Figura Red Cups</h3>
-                <p class="text-muted">€68.00</p>
+            <div class="card h-100 shadow-sm border-0 bg-white" style="border-radius: 1rem;">
+              <div class="card-body text-center p-4">
+                <div class="product-icon mb-3" style="width: 60px; height: 60px; background: #f8f9fa; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                  <span style="color: #8B5A3C; font-size: 1.5rem;">🫧</span>
+                </div>
+                <h3 class="h5 fw-light" style="font-family: 'Cormorant Garamond', serif;">Figura Red Cups</h3>
+                <p class="text-primary fw-semibold mt-2" style="font-size: 1.1rem;">€68.00</p>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="h5">Post-Operative Cream 1kg</h3>
-                <p class="text-muted">€124.00</p>
+            <div class="card h-100 shadow-sm border-0 bg-white" style="border-radius: 1rem;">
+              <div class="card-body text-center p-4">
+                <div class="product-icon mb-3" style="width: 60px; height: 60px; background: #f8f9fa; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                  <span style="color: #8B5A3C; font-size: 1.5rem;">🧴</span>
+                </div>
+                <h3 class="h5 fw-light" style="font-family: 'Cormorant Garamond', serif;">Post-Operative Cream 1kg</h3>
+                <p class="text-primary fw-semibold mt-2" style="font-size: 1.1rem;">€124.00</p>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="h5">Post-Operative Cream 250g</h3>
-                <p class="text-muted">€44.00</p>
+            <div class="card h-100 shadow-sm border-0 bg-white" style="border-radius: 1rem;">
+              <div class="card-body text-center p-4">
+                <div class="product-icon mb-3" style="width: 60px; height: 60px; background: #f8f9fa; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                  <span style="color: #8B5A3C; font-size: 1.5rem;">🧴</span>
+                </div>
+                <h3 class="h5 fw-light" style="font-family: 'Cormorant Garamond', serif;">Post-Operative Cream 250g</h3>
+                <p class="text-primary fw-semibold mt-2" style="font-size: 1.1rem;">€44.00</p>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h3 class="h5">Post-Operative Cream 500g</h3>
-                <p class="text-muted">€72.00</p>
+            <div class="card h-100 shadow-sm border-0 bg-white" style="border-radius: 1rem;">
+              <div class="card-body text-center p-4">
+                <div class="product-icon mb-3" style="width: 60px; height: 60px; background: #f8f9fa; border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                  <span style="color: #8B5A3C; font-size: 1.5rem;">🧴</span>
+                </div>
+                <h3 class="h5 fw-light" style="font-family: 'Cormorant Garamond', serif;">Post-Operative Cream 500g</h3>
+                <p class="text-primary fw-semibold mt-2" style="font-size: 1.1rem;">€72.00</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-light py-5" id="stats">
+      <section class="py-5" id="stats" style="background: #faf5ed;">
         <div class="container text-center">
           <div class="row g-4">
             <div class="col-md-3">
-              <h3 class="display-6 text-primary">5k+</h3>
-              <p class="text-muted">Satisfied patients</p>
+              <h3 class="display-5 fw-light text-primary" style="font-family: 'Cormorant Garamond', serif;">5k+</h3>
+              <p class="eyebrow text-muted">Satisfied patients</p>
             </div>
             <div class="col-md-3">
-              <h3 class="display-6 text-primary">800+</h3>
-              <p class="text-muted">Certified interns</p>
+              <h3 class="display-5 fw-light text-primary" style="font-family: 'Cormorant Garamond', serif;">800+</h3>
+              <p class="eyebrow text-muted">Certified interns</p>
             </div>
             <div class="col-md-3">
-              <h3 class="display-6 text-primary">60+</h3>
-              <p class="text-muted">Surgeons collaborators</p>
+              <h3 class="display-5 fw-light text-primary" style="font-family: 'Cormorant Garamond', serif;">60+</h3>
+              <p class="eyebrow text-muted">Surgeons collaborators</p>
             </div>
             <div class="col-md-3">
-              <h3 class="display-6 text-primary">14+</h3>
-              <p class="text-muted">Attentive countries</p>
+              <h3 class="display-5 fw-light text-primary" style="font-family: 'Cormorant Garamond', serif;">14+</h3>
+              <p class="eyebrow text-muted">Attentive countries</p>
             </div>
           </div>
         </div>
@@ -153,52 +188,81 @@
 
       <section class="container py-5" id="reviews">
         <div class="text-center mb-5">
-          <h2 class="fw-bold">Reviews from our clients</h2>
-          <p class="text-muted">Trusted opinions from graduates and patients.</p>
+          <h2 class="fw-light" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem;">They trusted us: discover their opinions!</h2>
+          <p class="text-muted" style="font-weight: 300;">Trusted opinions from graduates and patients.</p>
+          <div class="d-flex justify-content-center align-items-center mt-4">
+            <span class="me-2 fw-semibold">Excellent</span>
+            <div class="d-flex">
+              <span style="color: #D4AF37; font-size: 1.2rem;">★★★★★</span>
+            </div>
+          </div>
+          <p class="small text-muted mt-2">Based on Google reviews</p>
         </div>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 p-4">
-              <p>"Vanessa is a professional in her job. She really knows what she is doing right after the consultation."</p>
-              <p class="fw-bold mt-3 mb-0">Marina Mouton</p>
+            <div class="card h-100 shadow-sm border-0 p-4" style="background: #faf5ed; border-radius: 1rem;">
+              <div class="d-flex mb-3">
+                <span style="color: #D4AF37; font-size: 1.1rem;">★★★★★</span>
+              </div>
+              <p class="fst-italic" style="font-weight: 300; line-height: 1.6;">"Vanessa is a professional in her job. She really knows what she is doing right after the consultation."</p>
+              <p class="fw-semibold mt-3 mb-0" style="font-family: 'Cormorant Garamond', serif;">Marina Mouton</p>
+              <p class="small text-muted">1 year ago</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 p-4">
-              <p>"Challenge at the top of the top. Vanessa is very professional and knows the job."</p>
-              <p class="fw-bold mt-3 mb-0">Deya K.</p>
+            <div class="card h-100 shadow-sm border-0 p-4" style="background: #faf5ed; border-radius: 1rem;">
+              <div class="d-flex mb-3">
+                <span style="color: #D4AF37; font-size: 1.1rem;">★★★★★</span>
+              </div>
+              <p class="fst-italic" style="font-weight: 300; line-height: 1.6;">"Challenge at the top of the top. Vanessa is very professional and knows the job."</p>
+              <p class="fw-semibold mt-3 mb-0" style="font-family: 'Cormorant Garamond', serif;">Deya K.</p>
+              <p class="small text-muted">1 year ago</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 p-4">
-              <p>"Great professional!"</p>
-              <p class="fw-bold mt-3 mb-0">Adia</p>
+            <div class="card h-100 shadow-sm border-0 p-4" style="background: #faf5ed; border-radius: 1rem;">
+              <div class="d-flex mb-3">
+                <span style="color: #D4AF37; font-size: 1.1rem;">★★★★★</span>
+              </div>
+              <p class="fst-italic" style="font-weight: 300; line-height: 1.6;">"Great professional!"</p>
+              <p class="fw-semibold mt-3 mb-0" style="font-family: 'Cormorant Garamond', serif;">Adia</p>
+              <p class="small text-muted">2 years ago</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="bg-light py-5" id="blog">
+      <section class="py-5" id="blog" style="background: #faf5ed;">
         <div class="container text-center">
-          <h2 class="fw-bold">Latest articles</h2>
-          <p class="text-muted mb-4">News and insights from our academy.</p>
+          <p class="eyebrow text-primary mb-3">News and latest articles</p>
+          <h2 class="fw-light mb-4" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem;">Latest articles</h2>
+          <p class="text-muted mb-5" style="font-weight: 300;">News and insights from our academy.</p>
           <div class="row g-4">
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0 p-4">
-                <h3 class="h5">Why train in the Caleterapia?</h3>
-                <p class="text-muted">05 February 2025</p>
+              <div class="card h-100 shadow-sm border-0 p-4" style="background: white; border-radius: 1rem;">
+                <div class="blog-icon mb-3" style="width: 60px; height: 60px; background: linear-gradient(135deg, #8B5A3C, #D4AF37); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                  <span style="color: white; font-size: 1.5rem;">📚</span>
+                </div>
+                <h3 class="h5 fw-light mb-3" style="font-family: 'Cormorant Garamond', serif;">Why train in the Caleterapia?</h3>
+                <p class="small text-muted">By the academy · 05 February 2025</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0 p-4">
-                <h3 class="h5">Californian massage: complete sensory experience</h3>
-                <p class="text-muted">05 February 2025</p>
+              <div class="card h-100 shadow-sm border-0 p-4" style="background: white; border-radius: 1rem;">
+                <div class="blog-icon mb-3" style="width: 60px; height: 60px; background: linear-gradient(135deg, #8B5A3C, #D4AF37); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                  <span style="color: white; font-size: 1.5rem;">💆</span>
+                </div>
+                <h3 class="h5 fw-light mb-3" style="font-family: 'Cormorant Garamond', serif;">Californian massage: complete sensory experience</h3>
+                <p class="small text-muted">By the academy · 05 February 2025</p>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card h-100 shadow-sm border-0 p-4">
-                <h3 class="h5">Postpartum slimming: regain your shape</h3>
-                <p class="text-muted">05 February 2025</p>
+              <div class="card h-100 shadow-sm border-0 p-4" style="background: white; border-radius: 1rem;">
+                <div class="blog-icon mb-3" style="width: 60px; height: 60px; background: linear-gradient(135deg, #8B5A3C, #D4AF37); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                  <span style="color: white; font-size: 1.5rem;">🌸</span>
+                </div>
+                <h3 class="h5 fw-light mb-3" style="font-family: 'Cormorant Garamond', serif;">Postpartum slimming: regain your shape</h3>
+                <p class="small text-muted">By the academy · 05 February 2025</p>
               </div>
             </div>
           </div>
@@ -208,37 +272,38 @@
       <section class="container py-5" id="contact">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <h2 class="fw-bold">Get in touch</h2>
-            <p class="text-muted">Register for training or ask for a consultation.</p>
+            <h2 class="fw-light" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem;">Get in touch</h2>
+            <p class="text-muted mt-3" style="font-weight: 300;">Register for training or ask for a consultation.</p>
           </div>
           <div class="col-lg-6">
-            <form>
+            <form class="p-4" style="background: #faf5ed; border-radius: 1rem;">
               <div class="mb-3">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control" placeholder="Your name" />
+                <label class="form-label fw-semibold">Name</label>
+                <input type="text" class="form-control" placeholder="Your name" style="border-radius: 0.5rem; border: 2px solid #e9ecef;" />
               </div>
               <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="Your email" />
+                <label class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control" placeholder="Your email" style="border-radius: 0.5rem; border: 2px solid #e9ecef;" />
               </div>
               <div class="mb-3">
-                <label class="form-label">Message</label>
-                <textarea class="form-control" rows="4" placeholder="Tell us how we can help"></textarea>
+                <label class="form-label fw-semibold">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Tell us how we can help" style="border-radius: 0.5rem; border: 2px solid #e9ecef;"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Send message</button>
+              <button type="submit" class="btn btn-primary w-100 py-2" style="background: linear-gradient(135deg, #8B5A3C, #D4AF37); border: none; border-radius: 0.5rem;">Send message</button>
             </form>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-5">
       <div class="container text-center">
-        <p class="mb-1">© 2026 Parisian Radiance Academy</p>
-        <p class="small text-muted">Luxury wellness and aesthetic training</p>
+        <h3 class="fw-light mb-3" style="font-family: 'Cormorant Garamond', serif;">VANESSA SABOUN</h3>
+        <p class="mb-4" style="font-weight: 300;">© 2026 Vanessa Saboun Académie. All rights reserved.</p>
+        <p class="small text-white-50">Luxury wellness and aesthetic training</p>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Q1wO6YBN8Y8PZaB8BwlzO4Q2DO9PsaJhUxwaY3cUa7A6Sg8Q3J31pUKPjx0EoArW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
