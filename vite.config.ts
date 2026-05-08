@@ -3,7 +3,6 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   vite: {
     build: {
-      ssr: false,
       outDir: "dist",
       emptyOutDir: true,
     },
@@ -11,7 +10,7 @@ export default defineConfig({
 
   tanstackStart: {
     server: {
-      preset: "static",
+      preset: "vercel",
     },
   },
 });
