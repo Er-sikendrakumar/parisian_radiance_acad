@@ -3,7 +3,7 @@ import { Instagram, Facebook, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[oklch(0.94_0.02_70)] mt-32 pt-24 pb-10 px-6 lg:px-12">
+    <footer className="bg-[oklch(0.94_0.02_70)] mt-0 pt-24 pb-10 px-6 lg:px-12">
       <div className="mx-auto max-w-[1400px]">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
           <div className="lg:col-span-2 max-w-sm">

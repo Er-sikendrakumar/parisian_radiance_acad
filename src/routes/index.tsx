@@ -4,8 +4,9 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 
-import hero from "@/assets/hero.jpg";
+import hero from "@/assets/banner-image.png";
 import founder from "@/assets/founder.jpg";
+import founder2 from "@/assets/founder2.jpg";
 import maderotherapy from "@/assets/maderotherapy.jpg";
 import drainage from "@/assets/drainage.jpg";
 import oils from "@/assets/oils.jpg";
@@ -14,6 +15,14 @@ import product1 from "@/assets/product1.jpg";
 import product2 from "@/assets/product2.jpg";
 import product3 from "@/assets/product3.jpg";
 import product4 from "@/assets/product4.jpg";
+import product5 from "@/assets/copa-firguras.jpg";
+import product6 from "@/assets/Creme-post-operatoire-1kg.jpg";
+import product7 from "@/assets/Post-Operative-cream250.jpg";
+import product8 from "@/assets/post-operative-cream.jpg";
+import product9 from "@/assets/stagaire_14.jpg";
+import product10 from "@/assets/stagaire_15.jpg";
+import product11 from "@/assets/stagaire_17.jpg";
+import product12 from "@/assets/stagaire_18.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -98,7 +107,7 @@ function Founder() {
 /* ───── THREE PILLARS ───── */
 function ThreePillars() {
   const items = [
-    { title: "Aesthetic coaching for a stress-free transformation", img: founder },
+    { title: "Aesthetic coaching for a stress-free transformation", img: founder2 },
     { title: "Let our treatments reveal the best version of yourself", img: drainage },
     { title: "Find the perfect training course for you", img: training },
   ];
@@ -110,7 +119,7 @@ function ThreePillars() {
             <div className="img-zoom aspect-[4/3] rounded-sm overflow-hidden">
               <img src={it.img} alt={it.title} className="w-full h-full object-cover" loading="lazy" />
             </div>
-            <h3 className="font-serif text-xl mt-5 leading-snug">{it.title}</h3>
+            <h3 className="font-serif text-[1.5rem] mt-5 leading-snug text-center p-4 pt-0">{it.title}</h3>
           </article>
         ))}
       </div>
@@ -121,10 +130,10 @@ function ThreePillars() {
 /* ───── FEATURED PRODUCTS ───── */
 function FeaturedProducts() {
   const products = [
-    { name: "Cups — Figura Red", price: "€68.00", img: product3 },
-    { name: "Post-Operative Cream [1kg] — Figura Red", price: "€124.00", img: product2 },
-    { name: "Post-Operative Cream [250g] — Figura Red", price: "€44.00", img: product1 },
-    { name: "Post-Operative Cream [500g] — Figura Red", price: "€72.00", img: product4 },
+    { name: "Cups — Figura Red", price: "€68.00", img: product5 },
+    { name: "Post-Operative Cream [1kg] — Figura Red", price: "€124.00", img: product6 },
+    { name: "Post-Operative Cream [250g] — Figura Red", price: "€44.00", img: product7 },
+    { name: "Post-Operative Cream [500g] — Figura Red", price: "€72.00", img: product8 },
   ];
   return (
     <section className="py-24 px-6 lg:px-12 bg-ivory">
@@ -141,8 +150,8 @@ function FeaturedProducts() {
               <div className="img-zoom bg-background rounded-sm overflow-hidden aspect-square">
                 <img src={p.img} alt={p.name} className="w-full h-full object-cover" loading="lazy" />
               </div>
-              <h3 className="font-serif text-base mt-4 leading-snug">{p.name}</h3>
-              <span className="text-sm tracking-wider text-accent mt-1 block">{p.price}</span>
+              <h3 className="font-serif text-xl mt-4 leading-snug">{p.name}</h3>
+              <span className="text-lg tracking-wider accent-foreground font-semibold mt-1 block">{p.price}</span>
             </article>
           ))}
         </div>
@@ -175,7 +184,7 @@ function Stats() {
 
 /* ───── SUCCESS / PRIDE ───── */
 function SuccessPride() {
-  const imgs = [training, founder, maderotherapy, drainage];
+  const imgs = [product9, product10, product11, product12];
   return (
     <section className="py-24 px-6 lg:px-12 bg-ivory">
       <div className="mx-auto max-w-[1200px] text-center">
@@ -226,9 +235,9 @@ function Reviews() {
                     <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
                   ))}
                 </div>
-                <span className="text-[0.65rem] uppercase tracking-wider text-muted-foreground">G</span>
+                <span className="text-[0.8rem] uppercase tracking-wider text-muted-foreground">G</span>
               </div>
-              <div className="font-serif text-base mb-1">{q.who}</div>
+              <div className="font-serif text-xl mb-1">{q.who}</div>
               <div className="text-xs text-muted-foreground mb-4">{q.days}</div>
               <blockquote className="text-sm text-foreground/80 leading-relaxed">"{q.q}"</blockquote>
             </figure>
