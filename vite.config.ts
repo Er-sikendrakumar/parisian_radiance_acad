@@ -11,7 +11,7 @@ export default defineConfig({
 
   tanstackStart: {
     server: {
-      preset: "vercel",
+      preset: "static",
     },
   },
 });
